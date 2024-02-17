@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Template</title>
+    <style>/* (*) syntax for box sizing */
+        *{
+            box-sizing: border-box;
+        }
+    /* fron selected for the body contents */
+    body{
+        font-family:Arial, Helvetica, sans-serif ;
+    }
+    /*Style the header*/
+    header{
+        background-color: rgb(248, 72, 7);
+        padding: 15px;
+        text-align: center;
+        font-size: 35px;
+        color:white;
+    }
+
+    /* cerate two columns / Boxes */
+    nav{
+        float: left;
+        width: 30;
+        height: 300px;
+        background:rgb(147, 144, 144);
+        padding: 20px;
+    }
+    /* style the list inside the menu  */
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    /* specify the article */
+    article{
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color:rgb(109, 119, 121);
+        height: 300px;
+    }
+    /* Clear the floats after the column  */
+    section::after{
+        content: "";
+        display: table;
+        clear: both;
+
+    }
+    /* Style the footer */
+    footer{
+        background-color:rgb(65, 107, 2);
+        padding: 10px;
+        text-align: center;
+        color: white;
+    }
+    /*  Responsive layout */
+    @media(max-widh:600px){
+    nav,article {
+    width: 100%;
+    height: auto;
+}
+}
+</style>
+</head>
+<body>
+<h2> city of karanataka</h2>
+<p>Bangalore, officially known as Bengaluru, is the Capital of the Indian State of Karnataka 
+    . It has a population of over ten million, </p>
+<p> making it a megacity and the Third populous City and 5th most populous urban agglomeration in India.</p> 
+<header>
+    <h2> Cities i love in karanataka </h2>
+</header>
+<section>
+    <nav>
+        <ul>
+            <li> <a href="#">Bangalore</a></li>
+            <li><a href="#">Tumkur</a></li>
+            <li><a href="#">Mangaluru</a></li>
+        </ul>
+    </nav>
+
+<article>
+    <h2>Bangalore</h2>
+    <p>
+        Bengaluru (also called Bangalore) is the capital of India's southern Karnataka state. 
+        The center of India's high-tech industry, 
+    </p>
+    <p>
+        the city is also known for its parks and nightlife.
+    </p>
+    <h2>Tumkur</h2>
+    <p>Tumkur is one of the 31 districts of Karnataka, India. 
+        The district headquarter is Tumkur. it is also called as kalpathara nadu tumakuru </p>
+        <p>during the Commissioner's Rule of karnataka.</p>
+    <h2> Mangaluru</h2>
+    
+    </p>
+</article>    
+</section>
+<footer>
+    <p>
+        THANKS FOR VISIT.
+    </p>
+</footer>
+</body>
+</html>
